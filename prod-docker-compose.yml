@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: mysql
+    container_name: prod_mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD= "prodpassword"
+      - MYSQL_USER= "produser"
+      - MYSQL_PASSWORD= "prodpass"
+      - MYSQL_DATABASE= "proddb"
